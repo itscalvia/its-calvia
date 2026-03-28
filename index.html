@@ -6,28 +6,41 @@
 <title>ITS CALVIA - Pure Drinking Water</title>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* HEADER */
 header {
-    background: #007BFF;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 30px;
+    background:#007BFF;
+    color:white;
 }
 
+.logo {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+/* HERO */
 .hero {
-    background: #e6f2ff;
-    padding: 60px 20px;
-    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
 }
 
-.hero h1 {
-    font-size: 32px;
-}
-
+/* BUTTON */
 .btn {
     background: #007BFF;
     color: white;
@@ -38,6 +51,7 @@ header {
     margin-top: 15px;
 }
 
+/* SERVICES */
 .services {
     padding: 40px 20px;
     text-align: center;
@@ -52,6 +66,22 @@ header {
     border-radius: 10px;
 }
 
+/* INFO SECTION */
+.info {
+    display:flex;
+    align-items:center;
+    padding:60px 20px;
+    gap:40px;
+    flex-wrap:wrap;
+    background:#f9fbff;
+}
+
+.info img {
+    width:100%;
+    border-radius:10px;
+}
+
+/* CONTACT */
 .contact {
     background: #f2f2f2;
     padding: 40px 20px;
@@ -81,18 +111,25 @@ footer {
 
 <body>
 
+<!-- HEADER -->
 <header>
-<h1>ITS CALVIA</h1>
-<p>Stay Healthy, Stay Hydrated</p>
+    <div class="logo">
+        <img src="logo.png" height="40">
+        <h2>ITS CALVIA</h2>
+    </div>
+
+    <a href="#services" class="btn">Our Services</a>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-<h1>Pure Drinking Water Delivered to Your Doorstep</h1>
-<p>Serving all over Darbhanga</p>
-<a href="tel:6204588168" class="btn">Enquiry Now</a>
+<h1>Highest Quality Water Services</h1>
+<p>24x7 Available | Serving All Over Darbhanga</p>
+<a href="#services" class="btn">Explore Services</a>
 </section>
 
-<section class="services">
+<!-- SERVICES -->
+<section class="services" id="services">
 <h2>Our Services</h2>
 
 <div class="service-box">
@@ -115,7 +152,35 @@ footer {
 
 </section>
 
-<section class="contact">
+<!-- INFO SECTION -->
+<section class="info">
+    <div style="flex:1;">
+        <img src="bottle.jpg">
+    </div>
+
+    <div style="flex:1;">
+        <h4 style="color:#007BFF;">Our Solution</h4>
+        <h2>Reliable Water Delivery for Every Need</h2>
+
+        <p>
+        ITS CALVIA provides clean and safe drinking water for homes, offices, and events across Darbhanga. 
+        Fast delivery and trusted service you can rely on.
+        </p>
+
+        <ul style="list-style:none;line-height:30px;">
+            <li>✔️ Pure & hygienic water supply</li>
+            <li>✔️ 20L jars, 1L & 500ml bottles</li>
+            <li>✔️ Bulk supply for events</li>
+            <li>✔️ Custom label bottles</li>
+            <li>✔️ Fast delivery service</li>
+        </ul>
+
+        <a href="#contact" class="btn">Get Enquiry</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
 <h2>Contact Us</h2>
 <p><strong>Phone:</strong> 6204588168, 9162583610</p>
 <p><strong>WhatsApp:</strong> 6204588168</p>
