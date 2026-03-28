@@ -15,6 +15,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+h1,h2,h3 {
+    font-weight:600;
+}
+
 /* HEADER */
 header {
     display:flex;
@@ -41,17 +45,22 @@ header img {
 
 /* HERO */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 120px 40px;
+    padding: 140px 40px;
     text-align:left;
 }
 
 .hero h1 {
     font-size:38px;
     margin-bottom:10px;
+}
+
+.hero p {
+    font-size:16px;
+    opacity:0.9;
 }
 
 /* BUTTON */
@@ -77,18 +86,24 @@ header img {
     text-align: center;
 }
 
+.services-container {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
 .service-box {
     border: 1px solid #ddd;
     padding: 20px;
     margin: 15px;
-    display: inline-block;
     width: 260px;
     border-radius: 10px;
     transition:0.3s;
 }
 
 .service-box:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
 }
 
 /* INFO SECTION */
@@ -104,6 +119,14 @@ header img {
 .info img {
     width:100%;
     border-radius:10px;
+}
+
+.info h2 {
+    font-size:28px;
+}
+
+.info p {
+    color:#555;
 }
 
 /* CONTACT */
@@ -125,12 +148,13 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: green;
+    background: #25D366;
     color: white;
-    padding: 15px;
+    padding: 18px;
     border-radius: 50%;
     text-decoration: none;
-    font-size:20px;
+    font-size:22px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* MOBILE */
@@ -176,6 +200,8 @@ footer {
 <section class="services" id="services">
 <h2>Our Services</h2>
 
+<div class="services-container">
+
 <div class="service-box">
 <h3>Daily Supply</h3>
 <p>20L Jar, 1L & 500ml Bottles</p>
@@ -192,6 +218,8 @@ footer {
 <h3>Custom Label Bottles</h3>
 <p>Branding for your business/events</p>
 <a href="tel:6204588168" class="btn">Enquire</a>
+</div>
+
 </div>
 
 </section>
