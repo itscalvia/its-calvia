@@ -7,9 +7,8 @@
 
 <meta name="google-site-verification" content="LZjaM7lW2S7YvskDKLvJAi2N2vlxifUBVWwaDCG-Ajg" />
 
-<title>ITS CALVIA - Premium Water Delivery</title>
+<title>ITS CALVIA - Water Delivery in Darbhanga</title>
 
-<!-- PREMIUM FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
@@ -20,9 +19,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h1,h2,h3 { font-weight:600; }
+
 /* HEADER */
 header {
     display:flex;
+    align-items:center;
     justify-content:space-between;
     padding:15px 30px;
     background:#007BFF;
@@ -31,45 +33,43 @@ header {
     top: 0;
 }
 
-.logo { display:flex; align-items:center; gap:10px; }
+.logo {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
 header img { height:40px; }
 
 /* HERO */
 .hero {
-    height:100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero.jpg');
     background-size: cover;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
     color:white;
+    padding:140px 40px;
 }
-
-.hero h1 { font-size:40px; }
 
 /* BUTTON */
 .btn {
-    background:#00c6ff;
+    background:#007BFF;
     color:white;
-    padding:12px 25px;
-    border-radius:30px;
+    padding:12px 20px;
+    border-radius:5px;
     text-decoration:none;
     display:inline-block;
     margin-top:15px;
 }
 
-/* SECTION */
-.section {
-    padding:80px 20px;
+/* SERVICES */
+.services {
+    padding:50px 20px;
     text-align:center;
 }
 
-/* SERVICES */
 .services-container {
     display:flex;
-    justify-content:center;
     flex-wrap:wrap;
+    justify-content:center;
 }
 
 .service-box {
@@ -78,14 +78,9 @@ header img { height:40px; }
     margin:15px;
     width:260px;
     border-radius:10px;
-    transition:0.3s;
 }
 
-.service-box:hover {
-    transform:translateY(-8px);
-}
-
-/* PRODUCTS */
+/* NEW PRODUCT SECTION */
 .products {
     display:flex;
     flex-wrap:wrap;
@@ -95,40 +90,19 @@ header img { height:40px; }
 
 .card {
     width:250px;
-    border-radius:15px;
+    border-radius:10px;
     overflow:hidden;
-    background:white;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
-
-.card:hover {
-    transform:translateY(-10px);
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 .card img {
     width:100%;
-    height:200px;
-    object-fit:cover;
 }
 
-/* WHY */
-.why {
-    background:#eef6ff;
-}
-
-.why-box {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:30px;
-}
-
-.why-item {
-    width:200px;
-    background:white;
-    padding:20px;
-    border-radius:10px;
+/* TRUST */
+.trust {
+    padding:40px 20px;
+    text-align:center;
 }
 
 /* INFO */
@@ -137,35 +111,26 @@ header img { height:40px; }
     flex-wrap:wrap;
     padding:60px 20px;
     gap:30px;
-    background:#f9fbff;
-}
-
-.info img {
-    width:100%;
-    border-radius:10px;
 }
 
 /* CONTACT */
 .contact {
-    padding:60px;
-    background:#007BFF;
-    color:white;
+    padding:50px 20px;
     text-align:center;
 }
 
 /* WHATSAPP */
 .whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 18px;
-    border-radius: 50%;
-    text-decoration: none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    padding:15px;
+    border-radius:50%;
+    color:white;
 }
 
-/* SCROLL ANIMATION */
+/* ANIMATION */
 .fade {
     opacity:0;
     transform:translateY(40px);
@@ -175,11 +140,6 @@ header img { height:40px; }
 .fade.show {
     opacity:1;
     transform:translateY(0);
-}
-
-/* MOBILE */
-@media(max-width:768px){
-    .hero h1 { font-size:28px; }
 }
 </style>
 
@@ -192,20 +152,18 @@ header img { height:40px; }
 <img src="logo.png">
 <h2>ITS CALVIA</h2>
 </div>
-<a href="#contact" class="btn">Order</a>
+<a href="#services" class="btn">Our Services</a>
 </header>
 
-<!-- HERO -->
+<!-- ORIGINAL HERO -->
 <section class="hero fade">
-<div>
 <h1>Pure Drinking Water Delivered to Your Doorstep</h1>
-<p>Fast Delivery in Darbhanga</p>
-<a href="#services" class="btn">Explore</a>
-</div>
+<p>20L Jar | Bottles | Events Supply | Darbhanga</p>
+<a href="#services" class="btn">Explore Services</a>
 </section>
 
-<!-- SERVICES -->
-<section class="section fade" id="services">
+<!-- ORIGINAL SERVICES -->
+<section class="services fade" id="services">
 <h2>Our Services</h2>
 
 <div class="services-container">
@@ -223,75 +181,80 @@ header img { height:40px; }
 </div>
 
 <div class="service-box">
-<h3>Custom Label</h3>
-<p>Branding bottles</p>
+<h3>Custom Label Bottles</h3>
+<p>Branding for business/events</p>
 <a href="tel:6204588168" class="btn">Enquire</a>
 </div>
 
 </div>
 </section>
 
-<!-- PRODUCTS -->
-<section class="section fade">
+<!-- 🔥 NEW PRODUCT SECTION (ADD ONLY) -->
+<section class="services fade">
 <h2>Our Products</h2>
 
 <div class="products">
 
 <div class="card">
 <img src="bottle.jpg">
-<h3>20L Jar</h3>
+<h3 style="padding:10px;">20L Jar</h3>
 </div>
 
 <div class="card">
 <img src="bottle.jpg">
-<h3>1L Bottle</h3>
+<h3 style="padding:10px;">1L Bottle</h3>
 </div>
 
 <div class="card">
 <img src="bottle.jpg">
-<h3>500ml Bottle</h3>
+<h3 style="padding:10px;">500ml Bottle</h3>
 </div>
 
 </div>
 </section>
 
-<!-- WHY -->
-<section class="section why fade">
-<h2>Why Choose Us</h2>
+<!-- ORIGINAL TRUST -->
+<section class="trust fade">
+<h2>Why Choose ITS CALVIA?</h2>
 
-<div class="why-box">
-<div class="why-item">💧 Pure Water</div>
-<div class="why-item">🚚 Fast Delivery</div>
-<div class="why-item">💰 Affordable</div>
-<div class="why-item">⭐ Trusted Service</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+<div>💧 Pure Water</div>
+<div>🚚 Fast Delivery</div>
+<div>💰 Affordable</div>
+<div>📦 Bulk Supply</div>
 </div>
 </section>
 
-<!-- INFO -->
+<!-- ORIGINAL INFO -->
 <section class="info fade">
 <div style="flex:1;">
-<img src="bottle.jpg">
+<img src="bottle.jpg" style="width:100%;">
 </div>
 
 <div style="flex:1;">
 <h2>Reliable Water Delivery</h2>
-<p>Clean drinking water for homes & events in Darbhanga.</p>
+<p>Clean drinking water for homes & events.</p>
 </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ORIGINAL CONTACT -->
 <section class="contact fade" id="contact">
-<h2>Order Now</h2>
-<p>Call: 6204588168</p>
+<h2>Contact Us</h2>
+<p>Phone: 6204588168</p>
+<p>Address: Ranipur, Bela</p>
 </section>
+
+<footer style="background:#007BFF;color:white;text-align:center;padding:10px;">
+© 2026 ITS CALVIA
+</footer>
 
 <a class="whatsapp" href="https://wa.me/916204588168">💬</a>
 
 <script>
-const fades = document.querySelectorAll('.fade');
-window.addEventListener('scroll', () => {
-  fades.forEach(el => {
-    if(el.getBoundingClientRect().top < window.innerHeight - 100){
+const f = document.querySelectorAll('.fade');
+window.addEventListener('scroll', ()=>{
+  f.forEach(el=>{
+    if(el.getBoundingClientRect().top < window.innerHeight-100){
       el.classList.add('show');
     }
   });
